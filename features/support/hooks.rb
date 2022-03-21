@@ -17,9 +17,10 @@ at_exit do
 end
 
 @options = {
-  json_path: 'reportArtifacts/Report.json',
+  json_path: 'reportArtifacts/',
   report_path: "reportArtifacts/Report_#{BROWSER}",
-  report_types: [:html],
+  html_report_path: "reportArtifacts/Report_#{BROWSER}",
+  report_types: %i[json html],
   report_tabs: %w[features scenarios errors overview],
   report_title: 'Jpetstore Test Results',
   compress_images: true
