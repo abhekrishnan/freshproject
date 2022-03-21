@@ -1,5 +1,6 @@
 Feature: Verify the functionality of registration page
 
+  @user_details
   Scenario: User able to register in the register page
     Given I land on jpetstore home page
     And I click on the link enter the store
@@ -8,6 +9,7 @@ Feature: Verify the functionality of registration page
     And I enter the user details
     Then I verify i landed on the catalog page
 
+  @user_details
   Scenario Outline: user able to check for valid register users
     Given I land on jpetstore home page
     And I click on the link enter the store
