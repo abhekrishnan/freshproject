@@ -7,7 +7,7 @@ Before do |scenario|
   @browser.cookies.clear
 end
 
-After  do |scenario|
+After do |scenario|
   @browser.cookies.clear
   @browser.close
 end
