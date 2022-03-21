@@ -8,7 +8,7 @@ require 'logger'
 PROJECT_ROOT = Dir.pwd
 BROWSER = ENV.fetch('browser', 'chrome')
 
-FileUtils.makedirs('reportArtifacts')
+FileUtils.makedirs('log')
 
 LOGGER = Logger.new(STDOUT)
 LOGGER.level = Logger::INFO
