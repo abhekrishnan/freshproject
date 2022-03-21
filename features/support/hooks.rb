@@ -2,14 +2,14 @@ require 'report_builder'
 
 Before do |scenario|
   browser = get_browser(BROWSER)
-  $browser = browser
-  $browser.driver.manage.window.maximize
-  $browser.cookies.clear
+  @browser = browser
+  @browser.driver.manage.window.maximize
+  @browser.cookies.clear
 end
 
 After  do |scenario|
-  $browser.cookies.clear
-  $browser.close
+  @browser.cookies.clear
+  @browser.close
 end
 
 at_exit do
