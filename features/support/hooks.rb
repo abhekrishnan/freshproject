@@ -18,8 +18,8 @@ end
 
 @options = {
   json_path: 'reportArtifacts/',
-  report_path: "reportArtifacts/Report_#{BROWSER}",
-  html_report_path: "reportArtifacts/Report_#{BROWSER}",
+  report_path: "reportArtifacts/ReportBUILD",
+  html_report_path: "reportArtifacts/ReportBUILD",
   report_types: %i[json html],
   report_tabs: %w[features scenarios errors overview],
   report_title: 'Jpetstore Test Results',
