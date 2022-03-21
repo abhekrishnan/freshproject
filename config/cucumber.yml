@@ -1,7 +1,7 @@
 ## ##YAML Template
 <%FileUtils.makedirs('reportArtifacts') %>
 default: --format pretty  --format json --out=reportArtifacts/<%= Time.now.strftime("%Y%m%d-%H%M%S") %>-report.json
-  --format html --out=reportArtifacts/ReportBUILD.html --tags 'not (@wip or @manual_test)'
+  --format html --out=reportArtifacts/ReportBUILD.html
 
 landing_page: -p default --tags @landing_page
 login: -p default --tags @login
