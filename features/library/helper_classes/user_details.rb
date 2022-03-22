@@ -4,7 +4,7 @@ class User_details
   def initialize
     @details = {"userid" => 'sunday',
                 "password" => 'monday',
-                "firstname" => 'tuesday',
+                "firstname" => 'Abirami',
                 "lastname" => 'wednesday',
                 "email" => 'thursday@gmail.com',
                 "phone" => 4567893452,
