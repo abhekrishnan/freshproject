@@ -1,0 +1,1355 @@
+[
+  {
+    "id": "verify-the-functionality-of-login-page-with-user-details",
+    "uri": "E:/automation/freshproject/features/featuresfiles/login_page.feature",
+    "keyword": "Feature",
+    "name": "Verify the functionality of login page with user details",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "verify-the-functionality-of-login-page-with-user-details;user-able-to-login-with-the-user-details",
+        "keyword": "Scenario",
+        "name": "User able to login with the user details (x3) (x4) (x4) (x4) (x4) (x4) (x4) (x4) (x4) (x4) (x4) (x4)",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3988776500
+            },
+            "status": "passed",
+            "duration": 3988776500
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I land on jpetstore home page",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 712666000
+            },
+            "status": "passed",
+            "duration": 712666000
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on the link enter the store",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 575955900
+            },
+            "status": "passed",
+            "duration": 575955900
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the signup page",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 249756900
+            },
+            "status": "passed",
+            "duration": 249756900
+          },
+          {
+            "keyword": "And ",
+            "name": "The user able to login in with the details sunday_42 and monday",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:16"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "undefined method `set' for #<Watir::Input:0x00000000053dacc0>\nDid you mean?  step (NoMethodError)\n./features/step_definitions/login_steps.rb:17:in `/^The user able to login in with the details (.*) and (.*)$/'\n./features/featuresfiles/login_page.feature:8:in `The user able to login in with the details sunday_42 and monday'",
+              "duration": 41291500
+            },
+            "status": "failed",
+            "duration": 41291500
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify I landed on the welcome page",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            },
+            "status": "skipped",
+            "duration": 0
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 281352000
+            },
+            "status": "passed",
+            "duration": 281352000
+          }
+        ],
+        "status": "failed",
+        "duration": 5849798800
+      },
+      {
+        "id": "verify-the-functionality-of-login-page-with-user-details;verify-login-with-the-negative-scenario",
+        "keyword": "Scenario",
+        "name": "Verify login with the negative scenario (x5)",
+        "description": "",
+        "line": 12,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 11
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1964461500
+            },
+            "status": "passed",
+            "duration": 1964461500
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I land on jpetstore home page",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 642468400
+            },
+            "status": "passed",
+            "duration": 642468400
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on the link enter the store",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 607523700
+            },
+            "status": "passed",
+            "duration": 607523700
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the signup page",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 233577500
+            },
+            "status": "passed",
+            "duration": 233577500
+          },
+          {
+            "keyword": "And ",
+            "name": "The user able to login in with the details sunday_42 and monday",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 427133300
+            },
+            "status": "passed",
+            "duration": 427133300
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify that I got error message",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45453900
+            },
+            "status": "passed",
+            "duration": 45453900
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173714400
+            },
+            "status": "passed",
+            "duration": 173714400
+          }
+        ],
+        "status": "passed",
+        "duration": 4094332700
+      },
+      {
+        "id": "verify-the-functionality-of-login-page-with-user-details;user-able-to-login-with-the-multi-user-details;;2",
+        "keyword": "Scenario Outline",
+        "name": "User able to login with the multi user details (x3)",
+        "description": "",
+        "line": 28,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 19
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2039308400
+            },
+            "status": "passed",
+            "duration": 2039308400
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I land on jpetstore home page",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 707164500
+            },
+            "status": "passed",
+            "duration": 707164500
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on the link enter the store",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 476101500
+            },
+            "status": "passed",
+            "duration": 476101500
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the signup page",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 467788400
+            },
+            "status": "passed",
+            "duration": 467788400
+          },
+          {
+            "keyword": "And ",
+            "name": "The user able to login in with the details sunday_744 and monday",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5795861800
+            },
+            "status": "passed",
+            "duration": 5795861800
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify I landed on the welcome page for Abirami",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44799700
+            },
+            "status": "passed",
+            "duration": 44799700
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165304500
+            },
+            "status": "passed",
+            "duration": 165304500
+          }
+        ],
+        "status": "passed",
+        "duration": 9696328800
+      },
+      {
+        "id": "verify-the-functionality-of-login-page-with-user-details;user-able-to-login-with-the-multi-user-details;;3",
+        "keyword": "Scenario Outline",
+        "name": "User able to login with the multi user details (x3)",
+        "description": "",
+        "line": 29,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 19
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2190732300
+            },
+            "status": "passed",
+            "duration": 2190732300
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I land on jpetstore home page",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 703994600
+            },
+            "status": "passed",
+            "duration": 703994600
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on the link enter the store",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 623355400
+            },
+            "status": "passed",
+            "duration": 623355400
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the signup page",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 357631800
+            },
+            "status": "passed",
+            "duration": 357631800
+          },
+          {
+            "keyword": "And ",
+            "name": "The user able to login in with the details sunday_176 and monday",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5673938000
+            },
+            "status": "passed",
+            "duration": 5673938000
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify I landed on the welcome page for Surendra",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62231900
+            },
+            "status": "passed",
+            "duration": 62231900
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 268783800
+            },
+            "status": "passed",
+            "duration": 268783800
+          }
+        ],
+        "status": "passed",
+        "duration": 9880667800
+      },
+      {
+        "id": "verify-the-functionality-of-login-page-with-user-details;user-able-to-login-with-the-multi-user-details;;4",
+        "keyword": "Scenario Outline",
+        "name": "User able to login with the multi user details (x3)",
+        "description": "",
+        "line": 30,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 19
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1591936000
+            },
+            "status": "passed",
+            "duration": 1591936000
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I land on jpetstore home page",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 701593800
+            },
+            "status": "passed",
+            "duration": 701593800
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on the link enter the store",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 546039500
+            },
+            "status": "passed",
+            "duration": 546039500
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the signup page",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 351736200
+            },
+            "status": "passed",
+            "duration": 351736200
+          },
+          {
+            "keyword": "And ",
+            "name": "The user able to login in with the details sunday_926 and monday",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5640958700
+            },
+            "status": "passed",
+            "duration": 5640958700
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify I landed on the welcome page for Adhava",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53883000
+            },
+            "status": "passed",
+            "duration": 53883000
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 167607800
+            },
+            "status": "passed",
+            "duration": 167607800
+          }
+        ],
+        "status": "passed",
+        "duration": 9053755000
+      },
+      {
+        "id": "verify-the-functionality-of-login-page-with-user-details;user-able-to-login-with-the-multi-user-details;;5",
+        "keyword": "Scenario Outline",
+        "name": "User able to login with the multi user details (x3)",
+        "description": "",
+        "line": 31,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 19
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1462645300
+            },
+            "status": "passed",
+            "duration": 1462645300
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I land on jpetstore home page",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 654915100
+            },
+            "status": "passed",
+            "duration": 654915100
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on the link enter the store",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 480518300
+            },
+            "status": "passed",
+            "duration": 480518300
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the signup page",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 325533900
+            },
+            "status": "passed",
+            "duration": 325533900
+          },
+          {
+            "keyword": "And ",
+            "name": "The user able to login in with the details sunday_752 and monday",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5834452100
+            },
+            "status": "passed",
+            "duration": 5834452100
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify I landed on the welcome page for Adhira",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66644600
+            },
+            "status": "passed",
+            "duration": 66644600
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 175990600
+            },
+            "status": "passed",
+            "duration": 175990600
+          }
+        ],
+        "status": "passed",
+        "duration": 9000699900
+      }
+    ],
+    "status": "broken",
+    "duration": 47575583000
+  },
+  {
+    "id": "verify-the-functionality-of-registration-page",
+    "uri": "E:/automation/freshproject/features/featuresfiles/register_page.feature",
+    "keyword": "Feature",
+    "name": "Verify the functionality of registration page",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "verify-the-functionality-of-registration-page;user-able-to-register-in-the-register-page",
+        "keyword": "Scenario",
+        "name": "User able to register in the register page (x3)",
+        "description": "",
+        "line": 4,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@user_details",
+            "line": 3
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1937467100
+            },
+            "status": "passed",
+            "duration": 1937467100
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I land on jpetstore home page",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 795209200
+            },
+            "status": "passed",
+            "duration": 795209200
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on the link enter the store",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 749292800
+            },
+            "status": "passed",
+            "duration": 749292800
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the signup page",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218969800
+            },
+            "status": "passed",
+            "duration": 218969800
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the reqister now button",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 230971000
+            },
+            "status": "passed",
+            "duration": 230971000
+          },
+          {
+            "keyword": "And ",
+            "name": "I enter the user details",
+            "line": 9,
+            "output": [
+              "Text exists::true",
+              "User_id::::sunday_967"
+            ],
+            "match": {
+              "location": "features/step_definitions/register_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1920144400
+            },
+            "status": "passed",
+            "duration": 1920144400
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify i landed on the catalog page",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21788400
+            },
+            "status": "passed",
+            "duration": 21788400
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153829700
+            },
+            "status": "passed",
+            "duration": 153829700
+          }
+        ],
+        "status": "passed",
+        "duration": 6027672400
+      },
+      {
+        "id": "verify-the-functionality-of-registration-page;user-able-to-check-for-valid-register-users;;2",
+        "keyword": "Scenario Outline",
+        "name": "user able to check for valid register users (x2)",
+        "description": "",
+        "line": 22,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@user_details",
+            "line": 12
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2003159100
+            },
+            "status": "passed",
+            "duration": 2003159100
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I land on jpetstore home page",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 654656800
+            },
+            "status": "passed",
+            "duration": 654656800
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on the link enter the store",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 580643700
+            },
+            "status": "passed",
+            "duration": 580643700
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the signup page",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218758800
+            },
+            "status": "passed",
+            "duration": 218758800
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the reqister now button",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 244520300
+            },
+            "status": "passed",
+            "duration": 244520300
+          },
+          {
+            "keyword": "And ",
+            "name": "I enter the user details for user Abirami",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/register_steps.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1706286400
+            },
+            "status": "passed",
+            "duration": 1706286400
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify i landed on the catalog page",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28448200
+            },
+            "status": "passed",
+            "duration": 28448200
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155498200
+            },
+            "status": "passed",
+            "duration": 155498200
+          }
+        ],
+        "status": "passed",
+        "duration": 5591971500
+      },
+      {
+        "id": "verify-the-functionality-of-registration-page;user-able-to-check-for-valid-register-users;;3",
+        "keyword": "Scenario Outline",
+        "name": "user able to check for valid register users (x2)",
+        "description": "",
+        "line": 23,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@user_details",
+            "line": 12
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2463434000
+            },
+            "status": "passed",
+            "duration": 2463434000
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I land on jpetstore home page",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 669980500
+            },
+            "status": "passed",
+            "duration": 669980500
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on the link enter the store",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 658794000
+            },
+            "status": "passed",
+            "duration": 658794000
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the signup page",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 257594700
+            },
+            "status": "passed",
+            "duration": 257594700
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the reqister now button",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 246836900
+            },
+            "status": "passed",
+            "duration": 246836900
+          },
+          {
+            "keyword": "And ",
+            "name": "I enter the user details for user Surendra",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/register_steps.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1694262800
+            },
+            "status": "passed",
+            "duration": 1694262800
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify i landed on the catalog page",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24732300
+            },
+            "status": "passed",
+            "duration": 24732300
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165457500
+            },
+            "status": "passed",
+            "duration": 165457500
+          }
+        ],
+        "status": "passed",
+        "duration": 6181092700
+      },
+      {
+        "id": "verify-the-functionality-of-registration-page;user-able-to-check-for-valid-register-users;;4",
+        "keyword": "Scenario Outline",
+        "name": "user able to check for valid register users (x2)",
+        "description": "",
+        "line": 24,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@user_details",
+            "line": 12
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1499627600
+            },
+            "status": "passed",
+            "duration": 1499627600
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I land on jpetstore home page",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 695896600
+            },
+            "status": "passed",
+            "duration": 695896600
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on the link enter the store",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 471065000
+            },
+            "status": "passed",
+            "duration": 471065000
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the signup page",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 247861200
+            },
+            "status": "passed",
+            "duration": 247861200
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the reqister now button",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 249495100
+            },
+            "status": "passed",
+            "duration": 249495100
+          },
+          {
+            "keyword": "And ",
+            "name": "I enter the user details for user Adhava",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/register_steps.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1687997100
+            },
+            "status": "passed",
+            "duration": 1687997100
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify i landed on the catalog page",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27699600
+            },
+            "status": "passed",
+            "duration": 27699600
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154388000
+            },
+            "status": "passed",
+            "duration": 154388000
+          }
+        ],
+        "status": "passed",
+        "duration": 5034030200
+      },
+      {
+        "id": "verify-the-functionality-of-registration-page;user-able-to-check-for-valid-register-users;;5",
+        "keyword": "Scenario Outline",
+        "name": "user able to check for valid register users (x2)",
+        "description": "",
+        "line": 25,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@user_details",
+            "line": 12
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1408200900
+            },
+            "status": "passed",
+            "duration": 1408200900
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I land on jpetstore home page",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 653389800
+            },
+            "status": "passed",
+            "duration": 653389800
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on the link enter the store",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 463198000
+            },
+            "status": "passed",
+            "duration": 463198000
+          },
+          {
+            "keyword": "When ",
+            "name": "I enter the signup page",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 358294900
+            },
+            "status": "passed",
+            "duration": 358294900
+          },
+          {
+            "keyword": "And ",
+            "name": "I click the reqister now button",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 240716100
+            },
+            "status": "passed",
+            "duration": 240716100
+          },
+          {
+            "keyword": "And ",
+            "name": "I enter the user details for user Adhira",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/register_steps.rb:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1703619300
+            },
+            "status": "passed",
+            "duration": 1703619300
+          },
+          {
+            "keyword": "Then ",
+            "name": "I verify i landed on the catalog page",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/home_page_steps.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27585000
+            },
+            "status": "passed",
+            "duration": 27585000
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158849100
+            },
+            "status": "passed",
+            "duration": 158849100
+          }
+        ],
+        "status": "passed",
+        "duration": 5013853100
+      }
+    ],
+    "status": "working",
+    "duration": 27848619900
+  }
+]

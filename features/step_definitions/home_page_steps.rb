@@ -34,7 +34,7 @@ When(/^I click (.*) link$/) do |pet_name|
   # when "birds"
   #   @catalog.birdslinl.cick
   # else
-  #   puts "wrong petname"
+  #   LOGGER.info "wrong petname"
   # end
   #
   @catalog.pet_link(pet_name).click

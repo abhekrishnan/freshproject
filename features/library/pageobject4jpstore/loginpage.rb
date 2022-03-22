@@ -9,12 +9,16 @@ class Loginpage
     @browser.link(text: "Register Now!")
   end
   def username
-    @browser.input(name: "username")
+    @browser.text_field(name: "username")
   end
   def userpassword
-    @browser.input(name: "password")
+    @browser.text_field(name: "password")
   end
   def loginbutton
     @browser.input(name: "signon")
+  end
+
+  def error_message
+    @browser.ul(class: "messages")
   end
 end
