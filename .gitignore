@@ -1,3 +1,4 @@
 .idea
 Gemfile.lock
 reportArtifacts/*.html
+reportArtifacts/*.json
